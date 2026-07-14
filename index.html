@@ -48,7 +48,7 @@
 
   /* ---- DARK-SCENE text ---- */
   .scene-dark{color:var(--star)}
-  .scene-dark h1,.scene-dark h2{color:var(--light-cream)}
+  .scene-dark h1,.scene-dark h2{color:var(--light-cream);text-shadow:0 2px 18px rgba(0,0,0,.35)}
   /* ---- LIGHT-SCENE text: everything dark ---- */
   .scene-light{color:var(--ink)}
   .scene-light h1,.scene-light h2{color:var(--ink)}
@@ -436,7 +436,7 @@
     wrap.appendChild(s);}
 })();
 
-const BG={'night-deep':'#0a0e1f','night':'#131834','night-soft':'#1a1330','dawn-violet':'#2b2440','dawn-rose':'#5c4350','dawn-amber':'#d9b98a','light-sand':'#efe4cf','light-cream':'#f6efe2','light-warm':'#e8dcc4'};
+const BG={'night-deep':'#0a0e1f','night':'#131834','night-soft':'#1a1330','dawn-violet':'#2b2440','dawn-rose':'#40303b','dawn-amber':'#d9b98a','light-sand':'#efe4cf','light-cream':'#f6efe2','light-warm':'#e8dcc4'};
 const sky=document.getElementById('sky'),stars=document.getElementById('stars');
 const sections=[...document.querySelectorAll('section[data-bg]')];
 const bgObs=new IntersectionObserver((es)=>{es.forEach(e=>{
